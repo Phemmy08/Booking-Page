@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Booking</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="back-button">Back</a>
+        <!-- <h1 class="logo">READYHUBB</h1> -->
+    </header>
+
+    <!-- Booking Section -->
+    <section class="booking-container">
+        <h2>Request a booking</h2>
+        <p>Select your preferred services, date, time and leave a comment (It's optional)</p>
+
+        <div class="booking-content">
+            <!-- Booking Info -->
+            <div class="booking-info">
+                <h3>Booking info</h3>
+                <textarea placeholder="Leave a comment (it's optional)" maxlength="500"></textarea>
+                <span class="char-count">0 / 500</span>
+            </div>
+
+            <!-- Choose a Service -->
+            <div class="service-selection">
+                <h3>Choose a service</h3>
+                <button class="add-service">Add service</button>
+                <div id="service-list"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Select Date & Time Button -->
+    <div class="footer">
+        <button class="select-date-time">Select date and time</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
