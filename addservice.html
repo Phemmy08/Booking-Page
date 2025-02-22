@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Selection</title>
+    <link rel="stylesheet" href="addservice.css">
+</head>
+<body>
+
+    <!-- "Add Service" Button -->
+    <button id="openModalBtn" class="open-modal">Add Service</button>
+
+    <!-- Service Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Select a Service</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <h4>Deep Tissue Massage</h4>
+                    <p>30 min - <strong>$75.00</strong></p>
+                    <button class="add-btn">Add</button>
+                </div>
+                <div class="service-item">
+                    <h4>Hot Stone Massage</h4>
+                    <p>1h - <strong>$150.00</strong></p>
+                    <button class="add-btn">Add</button>
+                </div>
+                <div class="service-item">
+                    <h4>Swedish Massage</h4>
+                    <p>30 min - <strong>$75.00</strong></p>
+                    <button class="add-btn">Add</button>
+                </div>
+            </div>
+            <button class="save-btn">Save changes</button>
+        </div>
+    </div>
+
+    <script src="addservice.js"></script>
+</body>
+</html>
