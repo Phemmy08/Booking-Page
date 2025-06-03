@@ -118,3 +118,151 @@ textarea {
     border-radius: 5px;
     cursor: pointer;
 }
+
+
+
+
+
+.booking-prompt {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.booking-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+.modal-content h3 {
+    margin-top: 0;
+    color: #6b3e2e;
+}
+
+.modal-content label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+.modal-content select,
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.modal-content .book-btn {
+    width: 100%;
+    padding: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Show modal */
+.booking-modal.active {
+    display: flex;
+}
+
+
+
+.booking-prompt {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.book-btn-enhanced {
+    background: linear-gradient(to right, #a66344, #6b3e2e);
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.book-btn-enhanced:hover {
+    background: linear-gradient(to right, #6b3e2e, #a66344);
+}
+
+.booking-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.modal-content h3 {
+    color: #6b3e2e;
+    margin-top: 0;
+}
+
+.modal-content label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: bold;
+}
+
+.modal-content input,
+.modal-content select,
+.modal-content textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 28px;
+    color: #6b3e2e;
+    cursor: pointer;
+}
+
+/* Modal visible */
+.booking-modal.active {
+    display: flex;
+}
+

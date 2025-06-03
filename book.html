@@ -37,7 +37,66 @@
                 <div id="service-list"></div>
             </div>
         </div>
+
+
+
     </section>
+            <div class="booking-prompt">
+            <p>Want to book a session?</p>
+            <button class="open-booking-modal book-btn">Click Here</button>
+        </div>
+    
+<!-- Booking Modal -->
+<div class="booking-modal" id="bookingModal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h3>Book Your Session</h3>
+        <form action="https://formsubmit.co/Hailey.Kelleher547@gmail.com" method="POST">
+            <!-- FormSubmit configuration -->
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="New Massage Booking Request">
+
+            <label for="email">Your Gmail:</label>
+            <input type="email" name="email" id="email" placeholder="yourname@gmail.com" pattern=".+@gmail\.com" required>
+
+            <label for="service">Select Service:</label>
+            <select name="service" id="service" required>
+                <option value="">-- Choose a Service --</option>
+                <option>Deep Tissue Massage</option>
+                <option>Hot Stone Massage</option>
+                <option>Swedish Massage</option>
+            </select>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" name="date" id="date" required>
+
+            <label for="comment">Additional Comments:</label>
+            <textarea name="comment" id="comment" rows="4" placeholder="Anything else you'd like us to know?"></textarea>
+
+            <button type="submit" class="book-btn-enhanced">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+        <script>
+    document.querySelector('.open-booking-modal').addEventListener('click', function() {
+        document.getElementById('bookingModal').classList.add('active');
+    });
+
+    document.getElementById('closeModal').addEventListener('click', function() {
+        document.getElementById('bookingModal').classList.remove('active');
+    });
+
+    window.addEventListener('click', function(event) {
+        const modal = document.getElementById('bookingModal');
+        if (event.target === modal) {
+            modal.classList.remove('active');
+        }
+    });
+</script>
+
+
 
     <!-- Select Date & Time Button -->
     <div class="footer">
