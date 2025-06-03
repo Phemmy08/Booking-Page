@@ -52,9 +52,11 @@
         <span class="close-btn" id="closeModal">&times;</span>
         <h3>Book Your Session</h3>
         <form action="https://formsubmit.co/Hailey.Kelleher547@gmail.com" method="POST">
-            <!-- FormSubmit configuration -->
+            <!-- FormSubmit config -->
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_subject" value="New Massage Booking Request">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
 
             <label for="email">Your Gmail:</label>
             <input type="email" name="email" id="email" placeholder="yourname@gmail.com" pattern=".+@gmail\.com" required>
@@ -69,6 +71,12 @@
 
             <label for="date">Preferred Date:</label>
             <input type="date" name="date" id="date" required>
+
+            <label for="city">Your City:</label>
+            <input type="text" name="city" id="city" placeholder="e.g. Columbus" required>
+
+            <label for="county">Your County:</label>
+            <input type="text" name="county" id="county" placeholder="e.g. Franklin" required>
 
             <label for="comment">Additional Comments:</label>
             <textarea name="comment" id="comment" rows="4" placeholder="Anything else you'd like us to know?"></textarea>
@@ -100,20 +108,20 @@
 
     <!-- Select Date & Time Button -->
     <div class="footer">
-         <button class="select-date-time">Select date and time</button> 
+       <!--   <button class="select-date-time">Select date and time</button>  -->
       <!--   <button class="select-date-time" onclick="window.location.href='calendar.html';">Select date and time</button> 
     </div>
  -->
 
-    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
     
     <div id="calendar"></div>
+ -->
 
-
-    <script src="calendar.js"></script>
-
+    <!-- <script src="calendar.js"></script>
+ -->
     <!-- <script src="script.js"></script> -->
-    <script src="addservice.js"></script>
+  <!--   <script src="addservice.js"></script> -->
 </body>
 </html>
